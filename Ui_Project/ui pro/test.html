@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            min-height:100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-image:linear-gradient(30deg,rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url("./images/female-tourists-hand-have-happy-travel-map_1150-7411.webp");
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 12px;
+            position: relative;
+            font-size: larger;
+            margin-top: -5%;
+        }
+        #j{
+            position: absolute;
+            padding: 3px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 3px;
+            font-family:'Courier New', Courier, monospace;
+            color: #39ca74;
+            font-weight: bolder;
+        }
+        ul{
+            width: auto;
+            float: right;
+            margin-top: 8px;
+        }
+        li{
+            display: inline-block;
+            padding: 15px 30px;
+        }
+        #de{
+            font-size: x-large;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Raleway', sans-serif;
+        }
+        #e{
+            background-color: chartreuse;
+            border-radius: 50px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        
+        #r{
+            font-weight: bolder;
+        }
+        
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            margin-top: 2px;
+            height: 2px;
+            background: aquamarine;
+            display: block;
+            margin: auto;
+            transition: 0.5s
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        #e:hover::after{
+            width: 0%;
+        }
+        a:hover{
+            color: red;
+        }
+        #e:hover{
+            color: rgb(22, 22, 22);
+            background-color: rgb(255, 250, 250);
+
+        }
+        .e{
+            color:black;
+            font-style: italic; 
+            border-radius: 50px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        .busw{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .busw h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .busw p{
+            color: rgba(0, 0, 0, 0.824);
+            font-size: 14px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+        .row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bus-col{
+            flex-basis:31%;
+            background: #fff3f3;
+            border-radius: 15px;
+            margin-bottom: 5px;
+            padding-top: 80px;
+            box-sizing: border-box;
+            margin-right: 20px;
+            height: 15pc;
+        }
+        #col:hover{
+            background:linear-gradient(30deg,#B5F0F0,#9442FE)
+        
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1 id="j"><img src="./images/tourist-24366__340.webp" alt="image" width="50px" height="40px"> AKIO <span style="color:#ffffff;">Travels</span></h1>
+        <nav>
+            <i class="fa-solid fa-xmark"></i>
+            <div class="nav-links">
+            <ul>
+                <li id="fe" ><a href="main.html"><i id="de" class="fa-solid fa-house-user"></i> Home</a></li>
+                <li id="fe"><a href="about.html"><i id="de" class="fa-brands fa-nfc-symbol"></i> About</a></li>
+                <li id="fe"><a href="map.html"><i de="de" class="fa-solid fa-map-location-dot"></i> Map</a></li>
+                <li id="fe"><a href="contact.html"><i id="de" class="fa-solid fa-address-card"></i> Contact Us</a></li>
+                <li id="e"><a class="e" href="sign.html"><i id="r" class="fa-brands fa-connectdevelop"></i>Sign In</a></li>
+            </ul>
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+        <section class="busw" >
+            <h1 style="color:#39ca74;">Busses Available</h1>
+            <p style="color:#9442FE;">Please chhose any bus you want to travel</p>
+            <div class="row">
+                <div ID="col" class="bus-col">
+                    <img style="margin-top:-3pc;" src="./images/bus-312564__340.webp" width="100pc">
+                    <p>Company: VRL Travels<br>
+                    Number of seats : 50<br>
+                    In service from: 2001<br><br>
+                    <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p> 
+                </div>
+                <div id="col" class="bus-col">
+                    <img style="margin-top:-3pc;" src="./images/bus-png-40029.png" width="100pc">  
+                    <p>Company: Srinath Travels<br>
+                    Number of seats : 25<br>
+                    In service from: 2000<br><br>
+                    <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                </div>
+                <div id="col" class="bus-col">
+                    <img style="margin-top:-3pc;" src="./images/tourist-24366__340.webp" width="100pc">
+                    <p>Company: Rapid Transist<br>
+                    Number of seats : 50<br>
+                    In service from: 2005<br><br>
+                    <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                </div>
+                <div id="col" class="bus-col">
+                    <img style="margin-top:-3pc;" src="./images/bus-png-40028.png" width="100pc">
+                    <p>Company: Mega Bus<br>
+                    Number of seats : 40<br>
+                    In service from: 2003<br><br>
+                    <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/ios-filled/50/undefined/star-half-empty.png"/></p>
+                </div>
+            </div><br>
+                <div class="row">
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-3pc;" src="./images/a.png" width="100pc">
+                        <p>Company: Volva<br>
+                        Number of seats : 50<br>
+                        In service from: 2002<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                    </div>
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-3pc;" src="./images/b.png" width="100pc">  
+                        <p>Company: Tiger Bus<br>
+                        Number of seats : 25<br>
+                        In service from: 2007<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/ios-filled/50/undefined/star-half-empty.png"/></p>
+                    </div>
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-4.3pc;" src="./images/d.png" width="100pc" style="margin-top:-15px;">
+                        <p style="margin-top:-20px;">Company: First Choice Bus<br>
+                        Number of seats : 50<br>
+                        In service from: 2009<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/ios-filled/50/undefined/star-half-empty.png"/></p>
+                    </div>
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-3pc;" src="./images/bus-312564__340.webp" width="100pc">
+                        <p>Company: Pink Panther Bus<br>
+                        Number of seats : 40<br>
+                        In service from: 2008<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/ios-filled/50/undefined/star-half-empty.png"/></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-14px;" src="./images/bus-png-40028.png" width="100pc">
+                        <p>Company: Ultimate Ride<br>
+                        Number of seats : 50<br>
+                        In service from: 2006<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                    </div>
+                    <div id="col" class="bus-col">
+                        <img style="margin-top:-14px;" src="./images/b.png" width="100pc">  
+                        <p>Company: The Lucky Bus<br>
+                        Number of seats : 25<br>
+                        In service from: 2011<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                    </div>
+                    <div id="col" class="bus-col">
+                        <img src="./images/bus-png-40029.png" width="100pc" style="margin-top:-15px;">
+                        <p>Comapny: Uni Ride<br>
+                        Number of seats : 50<br>
+                        In service from: 2012<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/></p>
+                    </div>
+                    <div id="col"  class="bus-col">
+                        <img style="margin-top:-12px;" src="./images/bus-312564__340.webp" width="100pc">
+                        <p>Company: Cube Bus<br>
+                        Number of seats : 40<br>
+                        In service from: 2004<br><br>
+                        <img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/material-sharp/24/undefined/star--v1.png"/><img width="15px" height="15px" src="https://img.icons8.com/ios-filled/50/undefined/star-half-empty.png"/></p>
+                    </div>
+                </div>
+        </section>
+    </section>
+</body>
+</html>

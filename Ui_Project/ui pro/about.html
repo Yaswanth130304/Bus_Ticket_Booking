@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg,#fbda61,#ff5acd);
+        }
+        .card{
+            position: relative;
+            width: 350px;
+            height: 190px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+            transition: 0.5s;
+        }
+        .card:hover{
+            height: 450px;
+        }
+        .imgbx{
+            position: absolute;
+            left: 50%;
+            top: -50px;
+            transform: translate(-50%);
+            width: 150px;
+            height: 150px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+            overflow: hidden;
+            transition: 0.2s;
+        }
+        .card:hover .imgbx{
+            width: 250px;
+            height: 250px;
+
+        }
+        .imgbx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card .content{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .card .content .detail{
+            padding: 40px;
+            text-align: center;
+            width: 100%;
+            transition: 0.8s;
+            transform: translateY(150px);
+            overflow: hidden;
+        }
+        .card:hover .content .detail{
+            transform: translateY(0px);
+        }
+        .card .content .detail h2{
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #555;
+            line-height: 1.25em;
+        }
+        .card .content .detail h2 span{
+            font-size: 0.75em;
+            font-weight: 500;
+            opacity: 0.5;
+        }
+        .card .content .detail .data{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+
+        }
+        .card .content .detail .data h3{
+            font-size: 1em;
+            color: #555;
+            line-height: 1.2em;
+            font-weight: 600;
+        }
+        .card .content .detail .data h3 span{
+            font-size: 0.85em;
+            font-weight: 400;
+            opacity: 0.5;
+        }
+        .card .content .detail .actionbtn{  
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card .content .detail .actionbtn button{
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            font-weight: 500;
+            background: #ff5f95;
+            color: #fff;
+            cursor: pointer;
+        }
+        .card .content .detail .actionbtn button:nth-child(2){
+            border: 1px solid #999;
+            color: #999;
+            background: #fff;
+        }
+        table tr {
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table style="margin-left:1px;padding-top: 6pc;">
+        <tr>
+        <td style="margin-left: -3px;">
+            <div class="card">
+                <div class="imgbx">
+                    <img src="./images/yes.jpeg">
+                </div>
+                <div class="content">
+                    <div class="detail">
+                        <h2>Yaswanth.R <br><span>Founder</span></h2>
+                        <div class="data">
+                            <h3>Roll.Num<br><span>AMENU4CSE21247</span></h3>
+                            <h3>Batch <span>CSE-C</span></h3>
+                            <h3>Cateogery <span> Founder</span></h3>
+                        </div>
+                        <div class="actionbtn">
+                            <a href="https://github.com/Yaswanth130304"><button>Github</button></a>
+                            <button><a style="text-decoration:none;" href="https://www.instagram.com/yaswanth_452/"> Instagram</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="./images/me.jfif">
+                </div>
+                <div class="content">
+                    <div class="detail">
+                        <h2>Bhargava.S <br><span>Co-Founder</span></h2>
+                        <div class="data">
+                            <h3>Roll.Num<br><span>AMENU4CSE21251</span></h3>
+                            <h3>Batch <span>CSE-C</span></h3>
+                            <h3>Cateogery <span> Co-Founder</span></h3>
+                        </div>
+                        <div class="actionbtn">
+                            <a href="https://github.com/bhargava-sai-krishna"><button>Github</button></a>
+                            <button><a style="text-decoration:none;" href="https://www.instagram.com/sankabhargava/"> Instagram</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br><br>
+    <br><br>
+    <br><br><br><br>
+    <table style="margin-left:-2.8pc;padding-top:5pc;">
+         <tr>
+            <td>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="./images/gay.jpeg">
+                </div>
+                <div class="content">
+                    <div class="detail">
+                        <h2>Gayatri.K <br><span>Designer</span></h2>
+                        <div class="data">
+                            <h3>Roll.Num<br><span>AMENU4CSE21230</span></h3>
+                            <h3>Batch <span>CSE-C</span></h3>
+                            <h3>Cateogery <span> Co-Found</span></h3>
+                        </div>
+                        <div class="actionbtn">
+                            <button>Github</button>
+                            <button>Instagram</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </td>
+            <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+        <td>&ensp;&ensp;&ensp;&ensp;</td>
+            <td>
+            <div class="card">
+                <div class="imgbx">
+                    <img src="./images/kichu.webp">
+                </div>
+                <div class="content">
+                    <div class="detail">
+                        <h2>Krishnendu.N <br><span>Manager</span></h2>
+                        <div class="data">
+                            <h3>Roll.Num<br><span>AMENU4CSE21238 </span></h3>
+                            <h3>Batch <span>CSE-C</span></h3>
+                            <h3>Cateogery <span> Co-Founder</span></h3>
+                        </div>
+                        <div class="actionbtn">
+                            <a href="https://www.instagram.com/k_i_c_h_u_7820/"><button>Github</button></a>
+                            <button><a style="text-decoration:none;" href="https://www.instagram.com/k_i_c_h_u_7820/"> Instagram</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

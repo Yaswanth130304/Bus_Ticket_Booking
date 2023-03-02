@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akio travels</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header{
+            min-height:100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-image:linear-gradient(30deg,rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url("./images/female-tourists-hand-have-happy-travel-map_1150-7411.webp");
+        }
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links{
+            flex: 1;
+            text-align: right;
+            margin-top: -5%;
+        }
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 0px 12px;
+            position: relative;
+            font-size: larger;
+            margin-top: -20%;
+        }
+        #j{
+            position: absolute;
+            padding: 3px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 3px;
+            font-family:'Courier New', Courier, monospace;
+            color: #11ec68;
+            font-weight: bolder;
+        }
+        ul{
+            width: auto;
+            float: right;
+            margin-top: 8px;
+        }
+        li{
+            display: inline-block;
+            padding: 15px 30px;
+        }
+        #de{
+            font-size: x-large;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Raleway', sans-serif;
+        }
+        #e{
+            background-color: chartreuse;
+            border-radius: 50px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        
+        #r{
+            font-weight: bolder;
+        }
+        
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            margin-top: 2px;
+            height: 2px;
+            background: aquamarine;
+            display: block;
+            margin: auto;
+            transition: 0.5s
+        }
+        .nav-links ul li:hover::after{
+            width: 100%;
+        }
+        #e:hover::after{
+            width: 0%;
+        }
+        a:hover{
+            color: red;
+        }
+        #e:hover{
+            color: rgb(22, 22, 22);
+            background-color: rgb(255, 250, 250);
+
+        }
+        .e{
+            color:black;
+            font-style: italic; 
+            border-radius: 50px;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        .login-box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%,-50%);
+            background: rgba(88, 83, 83, 0.375);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+        }
+        .login-box h2{
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        .login-box .user-box{
+            position: relative;
+        }
+        .login-box .user-box input{
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+        .login-box .user-box label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label{
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+        .login-box form .dog{
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03e9f4;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        .login-box .dog:hover{
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 50px #03e9f4;
+        }
+        .login-box .dog span{
+            position:absolute;
+            display: block;
+        }
+        .login-box .dog span:nth-child(1){
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg,transparent,#03e9f4);
+            animation: btn-anim1 1s linear infinite;
+        }
+        @keyframes btn-anim1{
+            0%{
+                left: -100%;
+            }
+            50%,100%{
+                left: 100%;
+            }
+        }
+        .login-box .dog span:nth-child(2){
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg,transparent,#03e9f4);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: .25s;
+        }
+        @keyframes btn-anim2{
+            0%{
+                top: -100%;
+            }
+            50%,100%{
+                top: 100%;
+            }
+        }
+        .login-box .dog span:nth-child(3){
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg,transparent,#03e9f4);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: .5s;
+        }
+        @keyframes btn-anim3 {
+            0%{
+                right: -100%;
+            }
+            50%,100%{
+                right: 100%;
+            }
+        }
+        .login-box .dog span:nth-child(4){
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,#03e9f4);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: .75s;
+        }
+        @keyframes btn-anim4 {
+            0%{
+                bottom: -100%;
+            }
+            50%,100%{
+                bottom: 100%;
+            }
+        }
+        .catty{
+            color: chartreuse;
+        }
+        .catty:hover{
+            color:#A0BEF8;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h1 class="j" id="we"><img src="./images/tourist-24366__340.webp" alt="image" width="50px" height="40px"> <span style="color:chartreuse;">AKIO</span> <span style="color:#ffffff;">Travels</span></h1>
+        <nav>
+            <div class="nav-links">
+            <ul>
+                <li id="fe" ><a href="main.html"><i id="de" class="fa-solid fa-house-user"></i> Home</a></li>
+                <li id="fe"><a href="about.html"><i id="de" class="fa-brands fa-nfc-symbol"></i> About</a></li>
+                <li id="fe"><a href="map.html"><i id="de" class="fa-solid fa-map-location-dot"></i> Map</a></li>
+                <li id="fe"><a href="contact.html"><i id="de" class="fa-solid fa-address-card"></i> Contact Us</a></li>
+                <li id="e"><a class="e" href="sign.html"><i id="r" class="fa-brands fa-connectdevelop"></i>Sign In</a></li>
+            </ul>
+            </div>
+        </nav>
+        <br><br>
+        <div class="login-box">
+            <h2>Log in</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" class="uname" required>
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" class="password" required>
+                    <label>password</label>
+                </div>
+                <div align="left"><a href="signup.html"><span style="color:red;font-size: small;">Forgot the password ?</span></a></div>
+                <div align="center">
+                <button style="background-color:transparent;border-color: transparent;"type="submit"><a href="book.html" class="dog">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    login       
+                </a></button>
+                <br><br>
+                </div>
+                <div align="center"><span style="color:red;font-size:large;">Don't have an account?</span><a class="catty " href="signup.html"> Sign Up Here</a> </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    
+</script>
+</html>
